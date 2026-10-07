@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI Решатель</title>
+    <!-- Подключаем SDK Telegram Mini App -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Решатель</h1>
+            <p class="subtitle">Файлы и задачи в одном месте</p>
+        </header>
+
+        <!-- Блок 1: Нейросеть -->
+        <section class="card">
+            <h2>📤 Отправить задачу в нейросеть</h2>
+            <textarea id="taskInput" rows="4" placeholder="Введите задачу..."></textarea>
+            <button class="btn primary" onclick="sendToAI()">Отправить в AI</button>
+        </section>
+
+        <!-- Блок 2: Файлы -->
+        <section class="card">
+            <h2>📁 Обмен файлами</h2>
+            <button class="btn" onclick="getFiles()">Получить файлы с флешки</button>
+            <button class="btn" onclick="uploadToFlash()">Отправить файл на флешку</button>
+            <div id="fileList" class="file-list"></div>
+        </section>
+
+        <div id="status" class="status">Готов к работе</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
