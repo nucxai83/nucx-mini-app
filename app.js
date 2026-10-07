@@ -5,7 +5,7 @@ tg.expand();
 
 // Адрес вашего сервера (VPS или другого хостинга)
 // Пока сервер не готов, оставьте как есть — кнопки будут показывать сообщение.
-const SERVER_URL = 'https://ВАШ-СЕРВЕР'; // Замените позже
+const SERVER_URL = 'https://nucxai83.github.io/nucx-mini-app/'; // Замените позже
 
 const statusEl = document.getElementById('status');
 const fileListEl = document.getElementById('fileList');
